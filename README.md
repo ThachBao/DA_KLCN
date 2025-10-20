@@ -41,15 +41,7 @@ DATASET_ROOT/
 Ví dụ khi **có** ground truth (mask) với cấu trúc như trên:
 
 ```bash
-python -m src.cli.run_experiment \
-  --dataset_root "C:\Zalo Received Files\KLCN\DA_KLCN_fixed\dataset" \
-  --images_glob "images/**/*.*" \
-  --masks_glob  "mask/**/*.*" \
-  --out "results" \
-  --algos mfwoa,woa,pso,ga,otsu \
-  --Ks 2,3 \
-  --iters 200 --pop 50 --runs 3 --seed 42 \
-  --summary --curves --sigtest --debug_glob
+python -m src.cli.run_experiment --dataset_root "C:\Zalo Received Files\KLCN_ver1\DA_KLCN _ver1\dataset" --images_glob 'images\**\*.*' --masks_glob 'mask\**\*.*' --out "results" --algos mfwoa,woa,pso,ga,otsu --Ks 2,3 --iters 200 --pop 50 --runs 3 --seed 42 --summary --curves --sigtest --debug_glob
 ```
 
 ### Tham số quan trọng
